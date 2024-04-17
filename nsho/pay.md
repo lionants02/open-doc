@@ -45,7 +45,7 @@ sequenceDiagram
       - `subFund`
       - `localcode` แยกตาม local code
     - `eclaimowner.m_process_result.deduct` ผลการประมวลผลยอดที่มีการหักออกสำหรับการเบิกจ่าย Super App
-      - `amount` จำนวนที่ต้องหักออกจากรายการ `m_serv_result.totpayProcessed/AMOUNT_PAID` เป็นตามสมการ $` จำนวนเงินที่ส่งเบิก\ สปสช. = totpayProcessed/AMOUNT\_PAID - amount`$ โดยนำแต่ละรายการใน `m_serv_result` 
+      - `amount` จำนวนที่ต้องหักออกจากรายการ `m_serv_result.totpayProcessed/AMOUNT_PAID` เป็นตามสมการ $` จำนวนเงินที่ส่งเบิก\ สปสช. = totpayProcessed - amount`$ โดยนำแต่ละรายการใน `m_serv_result` 
       - `subfund`
       - `is_paid_by_nhso` จ่ายโดย สปสช. ต้องเป็น `true`
 
