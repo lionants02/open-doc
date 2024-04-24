@@ -1,3 +1,10 @@
+- [Bug เกิดจาก](#bug-เกิดจาก)
+- [การหา ITEM\_CODE จากฐาน Super App](#การหา-item_code-จากฐาน-super-app)
+  - [สร้าง ITEM\_CODE ในแฟ้ม NHSO\_PAY\_RESULT](#สร้าง-item_code-ในแฟ้ม-nhso_pay_result)
+
+# Bug เกิดจาก
+การเปลี่ยนการ link ฟิวด์ระหว่างตารางของ Super App จาก `localcode` เป็น `stdCode` เพื่อออกไปยังถังแดง ยังไม่ได้ผ่านการทดสอบ
+
 # การหา ITEM_CODE จากฐาน Super App
 
 ```mermaid
