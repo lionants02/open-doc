@@ -18,7 +18,8 @@ erDiagram
 
 ## สร้าง ITEM_CODE ในแฟ้ม NHSO_PAY_RESULT
 
-**คอนเซปจะต้องทำการ link 2 ตารางนี้เข้าด้วยกันด้วยค่า `localcode` แต่ตอนส่งจะส่งด้วยค่า `stdcode_origin`**
+**คอนเซปจะต้องทำการ link 2 ตารางนี้เข้าด้วยกันด้วยค่า `m_serv_result.stdcode_origin` กับ `m_serv_std.stdcode`**  
+
 ```mermaid
 flowchart TD
     s("start") --> pro1["link แมพค่าระหว่างตาราง\nm_serv_result และ m_serv_std"]
@@ -37,13 +38,12 @@ erDiagram
 
 
     m_serv_result{
-        varchar localcode "ใช้สำหรับ Lookup"
         varchar tran_no "ใช้สำหรับ Lookup"
-        varchar stdcode_origin "จะถูกเปลี่ยนชื่อเป็น ITEM_CODE"
+        varchar stdcode_origin "ใช้สำหรับ Lookup และ จะถูกเปลี่ยนชื่อเป็น ITEM_CODE"
     }
 
     m_serv_std{
-        varchar localcode "ใช้สำหรับ Lookup"
+        varchar stdcode "ใช้สำหรับ Lookup"
         varchar tran_no "ใช้สำหรับ Lookup"
         number reimbprice "จะถูกเปลี่ยนชื่อเป็น REIMB_UNIT_PRICE"
         number chargeamt "จะถูกเปลี่ยนชื่อเป็น AMOUNT_CHARGE"
