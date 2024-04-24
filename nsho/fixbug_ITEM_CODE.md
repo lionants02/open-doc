@@ -50,7 +50,7 @@ erDiagram
     }
 
     m_serv_std{
-        varchar stdcode "ใช้สำหรับ Lookup"
+        varchar stdcode "ใช้สำหรับ Lookup และใน CHARD จะถูกเปลี่ยนชื่อเป็น LOCALCODE"
         varchar tran_no "ใช้สำหรับ Lookup"
         number reimbprice "จะถูกเปลี่ยนชื่อเป็น REIMB_UNIT_PRICE"
         number chargeamt "จะถูกเปลี่ยนชื่อเป็น AMOUNT_CHARGE"
